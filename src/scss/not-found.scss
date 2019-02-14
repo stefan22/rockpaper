@@ -1,0 +1,30 @@
+@import './App.scss';
+
+.not-found {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  .not-found-title {
+    font-weight: 400;
+    color: #BF360C;
+  }
+  .not-found-link {
+    display: inline-block;
+    margin-top: 40px;
+    color: #212121;
+    text-decoration: none;
+    border: 1px solid #BF360C;
+    border-radius: 4px;
+    padding: 18px;
+    transition: border .2s;
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
+}
+
+
+
+
+
+

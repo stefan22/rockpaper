@@ -1,0 +1,143 @@
+@import './App.scss';
+
+.page-wrapper {
+  min-height: 100vh;
+  width:100%;
+  box-sizing: border-box;
+  &.bg {
+   background: darkslateblue;
+  }
+  .top-section-wrapper {
+    margin-bottom:1rem;
+  }
+
+  .mid-section-wrapper {
+    width:100%;
+    min-height: 320px;
+    margin-bottom: 3rem;
+    &.loading {
+      transition: background 1s, color 1s;
+      overflow: hidden;
+    }
+    .ball-loading {
+      background: url(../images/ball.gif) no-repeat center center;
+      display: flex;
+      justify-content: space-around;
+      color: #b9b9b9;
+      font-size: 1.25rem;
+      line-height: 16;
+      mix-blend-mode: hard-light;
+    }
+    .inner-wrapper {
+      .top-score {
+        overflow: auto;
+        max-height: 200px;
+        margin-bottom: 3rem;
+        .score-row {
+          .is-turn {
+            min-width:250px;
+          }
+        }
+      }
+      .midtop {
+        overflow: auto;
+        margin-bottom: 3rem;
+        background: #eee;
+        .players-avatar,.players-scoreboard {
+          min-height: 120px;
+          //border: 1px solid #eee;
+        }
+        .players-avatar {
+          display: flex;
+          flex-flow: wrap-reverse;
+          justify-content: space-evenly;
+          span {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+
+      }//midtop
+
+      .midbottom {
+        margin-bottom: 3rem;
+        overflow: auto;
+        .game-hand {
+          padding: 10px 10px 5px 10px;
+          img.rps-button {
+            max-width: 150px;
+            background: #eeeeee;
+            height: auto;
+            width:100%;
+            cursor: pointer;
+            transition:all .2s ease-in;
+            &:hover {
+              background: #cccff4;
+              border-radius: 50%;
+            }
+          }
+          .game-name {
+            float:right;
+            padding: 40px;
+            margin:0;
+          }
+        }
+
+      }
+
+
+
+
+
+    }
+
+
+
+
+
+
+  }//midsection wrapper
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#rpc-table {
+  thead {
+    background-color: #3f50b4;
+    tr th {
+      color: #f8f6f8;
+      font-size: 1rem;
+      border:1px solid #b1b1b1;
+      text-align: center;
+    }
+    .games {
+      text-align: center;
+    }
+
+
+  }
+  tbody tr:nth-child(even) {
+    background:#f8f1f9;
+    tr td {
+      border:1px solid #b1b1b1;
+    }
+  }
+  tbody {
+    tr td {
+      border:1px solid #b1b1b1;
+    }
+  }
+
+}
