@@ -11,7 +11,7 @@
 
 #### Game Rules
 - You are Eric Cartman
-- Choose your Oponent from your right First.
+- Choose your Opponent from your right First.
 - Pick your hand from bottom set of options to start playing. That's it.
 - Reset game Before switching oponents.
 
@@ -19,5 +19,10 @@
 
 
 ** needs real tests
+
+
+
+<kbd>RPS</kbd><br/>
+![](src/images/rps.png)<br/>
 
 (..†he•En∂.)
