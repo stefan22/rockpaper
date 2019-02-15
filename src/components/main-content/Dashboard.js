@@ -51,20 +51,17 @@ class Dashboard extends Component {
 
   onPlayerChoice(res) {
     if(res === 1) {
-      console.log('no, you are player 1!');
       this.setState({
         playerChoice: res,
       });
     } else
     if(res === 2) {
-      console.log('ok you are player another player');
       this.setState({
         playerChoice: res,
         turn: 'Eric',
       });
     } else
     if(res === 3) {
-      console.log('ok you are player computer');
       this.setState({
         playerChoice: res,
         turn: 'you\'re playing computer atm',
@@ -151,7 +148,6 @@ class Dashboard extends Component {
   }
 
   handleGameReset() {
-    console.log('reset');
     this.setState({
       games: 0,
       wins: 0,
@@ -163,7 +159,6 @@ class Dashboard extends Component {
   }
 
   render() {
-    console.log(this);
     const {isLoading,wins,losses,draws,
       games,turn,currentGameResult} = this.state;
     return (

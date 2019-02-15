@@ -49,7 +49,7 @@ function InfoCard(props) {
               • <span className={classes.span}>PICK</span> your hand
               below to play the game.<br />
               • RESET game <span className={classes.span}>BEFORE
-              </span> switching oponents. <br />
+              </span> switching opponents. <br />
 
             </Typography>
           </CardContent>

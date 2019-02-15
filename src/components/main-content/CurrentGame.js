@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../scss/boardgame.scss';
 
 const CurrentGame = ({currentGameResult}) => {
   if(currentGameResult !== null) {
@@ -25,7 +26,11 @@ const CurrentGame = ({currentGameResult}) => {
     }
   }
   else if(currentGameResult === null) {
-    return <h3 className='text-center'>Click on an oponent, and pick your hand to begin.</h3>;
+    return (
+      <div className='current-game'>
+        <h3 className='text-center'>Click on an opponent, and pick your hand to begin.</h3>
+      </div>
+    );
   }
 };
 
