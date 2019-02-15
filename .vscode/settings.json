@@ -9,6 +9,8 @@
     "serviceWorker.js": true,
     "node_modules": true,
     "public/manifest.json": true,
+    "src/jest.config.json": true,
+    "src/setupTests.js": true,
   },
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
