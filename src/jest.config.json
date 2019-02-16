@@ -1,7 +1,6 @@
 {
   "setupFiles": [
-    "raf/polyfill",
-     "<rootDir>/src/setupTests.js"
+     "<rootDir>/src/tests/setupTests.js"
   ],
 
    "snapshotSerializers": [

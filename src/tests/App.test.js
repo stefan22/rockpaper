@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {shallow, mount, render} from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import App from '../components/App';

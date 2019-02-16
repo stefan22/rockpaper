@@ -1,0 +1,898 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameBoard component should render GameBoard correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GameBoard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <WithStyles(Table)
+        id="rpc-table"
+      >
+        <WithStyles(TableHead)>
+          <WithStyles(TableRow)>
+            <WithStyles(TableCell)
+              align="left"
+              className="ngames"
+            >
+              GAMES
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              align="left"
+              className="wins"
+            >
+              WINS
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              align="left"
+              className="losses"
+            >
+              LOSSES
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              align="left"
+              className="draws"
+            >
+              DRAWS
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              align="left"
+              className="turn"
+            >
+              TURN
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>
+        </WithStyles(TableHead)>
+        <WithStyles(TableBody)>
+          <WithStyles(TableRow)
+            className="score-row"
+          >
+            <WithStyles(TableCell)
+              align="left"
+              className="games"
+            />
+            <WithStyles(TableCell)
+              align="left"
+              className="wins"
+            />
+            <WithStyles(TableCell)
+              align="left"
+              className="losses"
+            />
+            <WithStyles(TableCell)
+              align="left"
+              className="draws"
+            />
+            <WithStyles(TableCell)
+              align="left"
+              className="isturn"
+            />
+          </WithStyles(TableRow)>
+        </WithStyles(TableBody)>
+      </WithStyles(Table)>,
+      "className": "paper-root",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <WithStyles(TableHead)>
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)
+                align="left"
+                className="ngames"
+              >
+                GAMES
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="wins"
+              >
+                WINS
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="losses"
+              >
+                LOSSES
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="draws"
+              >
+                DRAWS
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="turn"
+              >
+                TURN
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+          </WithStyles(TableHead)>,
+          <WithStyles(TableBody)>
+            <WithStyles(TableRow)
+              className="score-row"
+            >
+              <WithStyles(TableCell)
+                align="left"
+                className="games"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="wins"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="losses"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="draws"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="isturn"
+              />
+            </WithStyles(TableRow)>
+          </WithStyles(TableBody)>,
+        ],
+        "id": "rpc-table",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(TableRow)>
+              <WithStyles(TableCell)
+                align="left"
+                className="ngames"
+              >
+                GAMES
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="wins"
+              >
+                WINS
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="losses"
+              >
+                LOSSES
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="draws"
+              >
+                DRAWS
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="turn"
+              >
+                TURN
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(TableCell)
+                  align="left"
+                  className="ngames"
+                >
+                  GAMES
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="wins"
+                >
+                  WINS
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="losses"
+                >
+                  LOSSES
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="draws"
+                >
+                  DRAWS
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="turn"
+                >
+                  TURN
+                </WithStyles(TableCell)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": "GAMES",
+                  "className": "ngames",
+                },
+                "ref": null,
+                "rendered": "GAMES",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": "WINS",
+                  "className": "wins",
+                },
+                "ref": null,
+                "rendered": "WINS",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": "LOSSES",
+                  "className": "losses",
+                },
+                "ref": null,
+                "rendered": "LOSSES",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": "DRAWS",
+                  "className": "draws",
+                },
+                "ref": null,
+                "rendered": "DRAWS",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": "TURN",
+                  "className": "turn",
+                },
+                "ref": null,
+                "rendered": "TURN",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(TableRow)
+              className="score-row"
+            >
+              <WithStyles(TableCell)
+                align="left"
+                className="games"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="wins"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="losses"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="draws"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="isturn"
+              />
+            </WithStyles(TableRow)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(TableCell)
+                  align="left"
+                  className="games"
+                />,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="wins"
+                />,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="losses"
+                />,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="draws"
+                />,
+                <WithStyles(TableCell)
+                  align="left"
+                  className="isturn"
+                />,
+              ],
+              "className": "score-row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": undefined,
+                  "className": "games",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": undefined,
+                  "className": "wins",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": undefined,
+                  "className": "losses",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": undefined,
+                  "className": "draws",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "left",
+                  "children": undefined,
+                  "className": "isturn",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <WithStyles(Table)
+          id="rpc-table"
+        >
+          <WithStyles(TableHead)>
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)
+                align="left"
+                className="ngames"
+              >
+                GAMES
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="wins"
+              >
+                WINS
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="losses"
+              >
+                LOSSES
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="draws"
+              >
+                DRAWS
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                align="left"
+                className="turn"
+              >
+                TURN
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+          </WithStyles(TableHead)>
+          <WithStyles(TableBody)>
+            <WithStyles(TableRow)
+              className="score-row"
+            >
+              <WithStyles(TableCell)
+                align="left"
+                className="games"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="wins"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="losses"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="draws"
+              />
+              <WithStyles(TableCell)
+                align="left"
+                className="isturn"
+              />
+            </WithStyles(TableRow)>
+          </WithStyles(TableBody)>
+        </WithStyles(Table)>,
+        "className": "paper-root",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(TableHead)>
+              <WithStyles(TableRow)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="ngames"
+                >
+                  GAMES
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="wins"
+                >
+                  WINS
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="losses"
+                >
+                  LOSSES
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="draws"
+                >
+                  DRAWS
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="turn"
+                >
+                  TURN
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>
+            </WithStyles(TableHead)>,
+            <WithStyles(TableBody)>
+              <WithStyles(TableRow)
+                className="score-row"
+              >
+                <WithStyles(TableCell)
+                  align="left"
+                  className="games"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="wins"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="losses"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="draws"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="isturn"
+                />
+              </WithStyles(TableRow)>
+            </WithStyles(TableBody)>,
+          ],
+          "id": "rpc-table",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(TableRow)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="ngames"
+                >
+                  GAMES
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="wins"
+                >
+                  WINS
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="losses"
+                >
+                  LOSSES
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="draws"
+                >
+                  DRAWS
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  align="left"
+                  className="turn"
+                >
+                  TURN
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="ngames"
+                  >
+                    GAMES
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="wins"
+                  >
+                    WINS
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="losses"
+                  >
+                    LOSSES
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="draws"
+                  >
+                    DRAWS
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="turn"
+                  >
+                    TURN
+                  </WithStyles(TableCell)>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": "GAMES",
+                    "className": "ngames",
+                  },
+                  "ref": null,
+                  "rendered": "GAMES",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": "WINS",
+                    "className": "wins",
+                  },
+                  "ref": null,
+                  "rendered": "WINS",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": "LOSSES",
+                    "className": "losses",
+                  },
+                  "ref": null,
+                  "rendered": "LOSSES",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": "DRAWS",
+                    "className": "draws",
+                  },
+                  "ref": null,
+                  "rendered": "DRAWS",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": "TURN",
+                    "className": "turn",
+                  },
+                  "ref": null,
+                  "rendered": "TURN",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(TableRow)
+                className="score-row"
+              >
+                <WithStyles(TableCell)
+                  align="left"
+                  className="games"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="wins"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="losses"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="draws"
+                />
+                <WithStyles(TableCell)
+                  align="left"
+                  className="isturn"
+                />
+              </WithStyles(TableRow)>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="games"
+                  />,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="wins"
+                  />,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="losses"
+                  />,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="draws"
+                  />,
+                  <WithStyles(TableCell)
+                    align="left"
+                    className="isturn"
+                  />,
+                ],
+                "className": "score-row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": undefined,
+                    "className": "games",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": undefined,
+                    "className": "wins",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": undefined,
+                    "className": "losses",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": undefined,
+                    "className": "draws",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "left",
+                    "children": undefined,
+                    "className": "isturn",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
