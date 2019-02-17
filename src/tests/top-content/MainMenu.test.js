@@ -8,6 +8,14 @@ describe('MainMenu component', () => {
     const wrapper = shallow(<MainMenu />);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
+  it('should have class of "full-container"', () => {
+    const wrapper = shallow(<MainMenu />);
+    expect(wrapper.find('.full-container').length).toBe(1);
+  });
+  it('should have a NavLink with class of "nav topbar-home"', () => {
+    const wrapper = shallow(<MainMenu />);
+    expect(wrapper.find('.nav.topbar-home').length).toBe(1);
+  });
 
 
 });

@@ -7,10 +7,6 @@ describe('InfoCard component', () => {
     const wrapper = shallow(<InfoCard />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('should return shallow wrapper instance state null', () => {
-    const wrapper = shallow(<InfoCard />);
-    //const instance = wrapper.instance();
-    //expect(instance['state']).toBe(null);
-  });
+
 
 });

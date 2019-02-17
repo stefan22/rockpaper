@@ -22,12 +22,12 @@ class GameBoard extends Component {
     this.getBoard();
   }
 
-  getBoard() {
+  getBoard = () => {
     let board = boardData();
     return this.setState({
       board,
     });
-  }
+  };
 
   render() {
     const {nGames,nWins,nLosses,nDraws,nTurn} = this.state.board;

@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GameBoard component should render GameBoard correctly 1`] = `
+exports[`GameBoard component should have "Game/Wins/Losses/Draws and Turn as column titles" 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <GameBoard />,
+  Symbol(enzyme.__unrendered__): <GameBoard
+    boardData={[Function]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],

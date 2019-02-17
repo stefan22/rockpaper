@@ -18,8 +18,6 @@
 > (these same rules are shown in game app)
 
 
-** needs real tests
-
 
 
 <kbd>RPS</kbd><br/>
