@@ -12,6 +12,13 @@ describe('HandButton component', () => {
     const wrapper = shallow(<HandButton />);
     expect(wrapper.find('.game-hand').length).toBe(1);
   });
+  it('should have a wrapper "div" tag element', () => {
+    const wrapper = shallow(<HandButton />);
+    expect(wrapper.name()).toEqual('div');
+  });
+
+
+
 
 });
 
