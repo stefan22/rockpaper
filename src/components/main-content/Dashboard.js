@@ -24,12 +24,10 @@ class Dashboard extends Component {
       losses: 0,
       draws: 0,
       games: 0,
-      playerChoice: '',
+      playerChoice: 0,
       currentGameResult: null,
       turn: 'choose an opponent',
       count: 1,
-      choice1: undefined,
-      choice2: undefined,
     };
 
     this.onPlayerHandPick = this.onPlayerHandPick.bind(this);

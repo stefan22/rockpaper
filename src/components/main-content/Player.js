@@ -34,7 +34,7 @@ const Player = (props) => {
       >
         <Grid container justify="center" alignItems="center">
           <Avatar alt={name} src={imgsrc} className={classes.bigAvatar} />
-          <span className={classes.span}>{props.name}</span>
+          <span className={classes.span}>{props.name} </span>
 
         </Grid>
         <span>as player {playerNumber}</span>
