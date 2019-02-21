@@ -16,6 +16,4 @@ describe('MainMenu component', () => {
     const wrapper = shallow(<MainMenu />);
     expect(wrapper.find('.nav.topbar-home').length).toBe(1);
   });
-
-
 });

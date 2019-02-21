@@ -7,8 +7,8 @@ describe('CurrentGame component', () => {
       let currentGameResult = 'wins';
       const result = currentGame({currentGameResult});
       expect(result).toEqual(
-        <div className='current-game'>
-          <h3 className='text-center'>You won!</h3>
+        <div className="current-game">
+          <h3 className="text-center">You won!</h3>
         </div>
       );
     });
@@ -16,8 +16,8 @@ describe('CurrentGame component', () => {
       let currentGameResult = 'losses';
       const result = currentGame({currentGameResult});
       expect(result).toEqual(
-        <div className='current-game'>
-          <h3 className='text-center'>You lost!</h3>
+        <div className="current-game">
+          <h3 className="text-center">You lost!</h3>
         </div>
       );
     });
@@ -25,8 +25,8 @@ describe('CurrentGame component', () => {
       let currentGameResult = 'draws';
       const result = currentGame({currentGameResult});
       expect(result).toEqual(
-        <div className='current-game'>
-          <h3 className='text-center'>You draw!</h3>
+        <div className="current-game">
+          <h3 className="text-center">You draw!</h3>
         </div>
       );
     });
@@ -34,15 +34,10 @@ describe('CurrentGame component', () => {
       let currentGameResult = null;
       const result = currentGame({currentGameResult});
       expect(result).toEqual(
-        <div className='current-game'>
-          <h3 className='text-center'>Click on an opponent, and pick your hand to begin.</h3>
+        <div className="current-game">
+          <h3 className="text-center">Click on an opponent, and pick your hand to begin.</h3>
         </div>
       );
     });
-
-
   });
-
 });
-
-

@@ -7,8 +7,4 @@ describe('Player component', () => {
     const wrapper = shallow(<Player />);
     expect(wrapper).toMatchSnapshot();
   });
-
-
-
-
 });

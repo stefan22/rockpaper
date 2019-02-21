@@ -9,14 +9,13 @@ describe('Header component', () => {
     expect(wrapper).toMatchSnapshot();
     //expect(toJSON(wrapper)).toMatchSnapshot();
   });
-  it('should have class of "top-score" ',() => {
+  it('should have class of "top-score" ', () => {
     const wrapper = shallow(<Header />);
     expect(wrapper.find('.top-score').length).toBe(1);
     expect(wrapper.find('section').length).toBe(1);
   });
-  it('should have a "section" tag wrapper',() => {
+  it('should have a "section" tag wrapper', () => {
     const wrapper = shallow(<Header />);
     expect(wrapper.find('section').length).toBe(1);
   });
-
 });

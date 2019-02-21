@@ -7,6 +7,4 @@ describe('InfoCard component', () => {
     const wrapper = shallow(<InfoCard />);
     expect(wrapper).toMatchSnapshot();
   });
-
-
 });

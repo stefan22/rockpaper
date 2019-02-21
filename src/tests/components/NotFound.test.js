@@ -1,5 +1,5 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import NotFound from '../../components/NotFound';
 import toJSON from 'enzyme-to-json';
 
@@ -16,6 +16,4 @@ describe('NotFound page component', () => {
     const wrapper = shallow(<NotFound />);
     expect(wrapper.text()).toEqual('Page Not Found<Link />');
   });
-
-
 });
