@@ -1,7 +1,4 @@
 @import './App.scss';
-
-
-
 /*
   top-bar
 ˚˚˚˚˚˚˚˚˚˚˚˚
@@ -12,6 +9,14 @@
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
+    button.topbar-icon img {//doc logo
+      max-width: 125px;
+      width:100%;
+      height: auto;
+      &:hover, &:active {
+        border:none;
+      }
+    }
     a.topbar-home {
       color: white;
       text-decoration: none;
@@ -23,11 +28,7 @@
         letter-spacing: .35px;
       }
     }
-    @media (max-width:667px) {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-evenly;
-    }
+
     max-height: 73.25px;
     button.topbar-icon {
       padding: 5px;
@@ -38,7 +39,6 @@
       }
       img {
         max-height: 49.25px;
-        padding: 5px;
         mix-blend-mode: screen;
         opacity: 1;
         transition: all ease-in 1s;
@@ -48,94 +48,14 @@
 
       }
     }
-    @media (max-width:667px) {
-      button.topbar-icon {
-        // padding:0;
-        // margin:0;
-        // height: 61px;
-        // width:32%;
-        display: none;
-        span {
-          justify-content: flex-start;
-        }
-
-        img:hover,img:focus, img:active {
-          mix-blend-mode: color-burn;
-          background:#fff;
-          opacity: .9;
-        }
-      }
-      a.nav {
-        padding:0;
-        margin:0;
-        font-size:$sm-size;
-        padding: 4px 4px 2px 4px;
-
-      }
 
 
-    }
-  }
-}
-.container {
-  .header {
-    margin:2em 0;
-    h1 {
-      margin-bottom: 15px;
-    }
-  }
-  .main-content {
-    margin:2em 0;
-  }
-  @media (max-width:667px) {
-    .header {
-      h1 {
-        font-size: $lg-size;
-        font-weight: 500;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size:$sm-size;
-        margin-top:10px;
-
-      }
-    }
-    .main-content {
-      margin:2em 0;
-      @media (max-width:667px) {
-        p {
-          text-align: justify;
-        }
-      }
-
-    }
-    .main-content {
-      margin:2em 0;
-      @media (max-width:667px) {
-        p {
-          text-align: justify;
-        }
-      }
-
-    }
   }
 }
 
 
-/* topbar */
 
-.topbar-grow {
-  flex-grow: 1;
-}
-.topbar-icon img {//doc logo
-  max-width: 125px;
-  width:100%;
-  height: auto;
-}
 
-button.topbar-icon:hover, button.topbar-icon:active {
-  border:none;
-}
 
 
 

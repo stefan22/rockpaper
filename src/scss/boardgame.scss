@@ -1,83 +1,61 @@
 .current-game {
-  h3 {
-    font-weight: 400;
-  }
+	h3 {
+		font-weight: 400;
+	}
 }
 
 #rpc-table {
-  min-width: 980px;
-  thead tr {
-    th {
-      text-align: center;
-      text-align: center;
-      padding: 0 20px;
-      min-width: 100px;
+	min-width: 980px;
+	thead {
+		background-color: #3f50b4;
+		tr {
+			th {
+				padding: 0 20px;
+				min-width: 100px;
+				color: #f8f6f8;
+				font-size: 1rem;
+				border: 1px solid #b1b1b1;
+				text-align: center;
+			}
+		}
+	}
+	tbody tr {
+		td {
+			border: 1px solid #b1b1b1;
+		}
+		.rock,
+		.paper,
+		.scissors {
+			text-align: center;
+			padding: 0 3px;
+		}
+		.isturn {
+			min-width: 211px;
+			text-align: center;
+			font-size: 1rem;
+		}
+	}
+	.score-row .wins,
+	.score-row .losses,
+	.score-row .draws,
+	.score-row .games {
+		text-align: center;
+		font-size: 2rem;
+		padding: 0 25px;
+	}
+	.score-row .games {
+		color: rgb(24, 26, 24);
+	}
 
-      }
-  }
-  tbody tr {
-    td.rock, td.paper, td.scissors {
-      text-align: center;
-      padding:0 3px;
-    }
-    td.isturn {
-      min-width: 211px;
-      text-align: center;
-      font-size: 1rem;
-    }
-  }
+	.score-row .wins {
+		color: green;
+	}
 
+	.score-row .losses {
+		color: red;
+	}
+
+	.score-row .draws {
+		color: blue;
+	}
 }
-
-.score-row .wins, .score-row .losses, .score-row .draws, .score-row .games {
-  text-align: center;
-  font-size: 2rem;
-  padding: 0 25px;
-
-}
-
-.score-row .games {
-  color: rgb(24, 26, 24);
-}
-
-.score-row .wins {
-  color: green;
-}
-
-.score-row .losses {
-  color: red;
-}
-
-.score-row .draws {
-  color: blue;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//td.rock::after, td.paper::after, td.scissors::after {
-  //   background: #EDE7F6;
-  //   font-size: 1rem;
-  //   text-align: center;
-  //   visibility: hidden;
-  // }
-  // td.rock::after {
-  //   content: 'Rock';
-  // }
-  // td.paper::after {
-  //   content: 'Paper';
-  // }
-  // td.scissors::after {
-  //   content: 'Scissors';
-  // }

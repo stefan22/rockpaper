@@ -1,143 +1,151 @@
 @import './App.scss';
+@import './animations.scss';
 
 .page-wrapper {
-  min-height: 100vh;
-  width:100%;
-  box-sizing: border-box;
-  &.bg {
-   background: darkslateblue;
-  }
-  .top-section-wrapper {
-    margin-bottom:0;
-  }
+	min-height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+	//transition: all .25s ease-in-out;
+	&.bg {
+		background: darkslateblue;
+	}
+	&.bring-down {
+		z-index: 1;
+		.top-section-wrapper {
+			opacity: .5;
+			transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		}
+		.mid-section-wrapper {
+			opacity: .5;
+		}
+	}
+	.top-section-wrapper {
+		margin-bottom: 0;
+		opacity: 1;
+	}
 
-  .mid-section-wrapper {
-    width:100%;
-    min-height: 320px;
-    margin-bottom: 0;
-    &.loading {
-      transition: background 1s, color 1s;
-      overflow: hidden;
-    }
-    .ball-loading {
-      background: url(../images/ball.gif) no-repeat center center;
-      display: flex;
-      justify-content: space-around;
-      color: #b9b9b9;
-      font-size: 1.25rem;
-      line-height: 16;
-      mix-blend-mode: hard-light;
-    }
-    .inner-wrapper {
-      .top-score {
-        overflow: auto;
-        max-height: 200px;
-        margin-bottom: 3rem;
-        .score-row {
-          .is-turn {
-            min-width:250px;
-          }
-        }
-      }
-      .midtop {
-        overflow: auto;
-        margin-bottom: 3rem;
-        background: #eee;
-        .players-avatar,.players-scoreboard {
-          min-height: 120px;
-          //border: 1px solid #eee;
-        }
-        .players-avatar {
-          display: flex;
-          flex-flow: wrap-reverse;
-          justify-content: space-evenly;
-          span {
-            text-align: center;
-            display: inline-block;
-            width: 100%;
-          }
-        }
+	.mid-section-wrapper {
+		width: 100%;
+		opacity: 1;
+		min-height: 320px;
+		margin-bottom: 0;
+		&.loading {
+			transition: background 1s, color 1s;
+			overflow: hidden;
+		}
+		.ball-loading {
+			background: url(../images/ball.gif) no-repeat center center;
+			display: flex;
+			justify-content: space-around;
+			color: #b9b9b9;
+			font-size: 1.25rem;
+			line-height: 16;
+			mix-blend-mode: hard-light;
+		}
+		.inner-wrapper {
+			.top-score {
+				overflow: auto;
+				max-height: 200px;
+				margin-bottom: 3rem;
+				.score-row {
+					.is-turn {
+						min-width: 250px;
+					}
+				}
+			}
+			.midtop {
+				overflow: auto;
+				margin-bottom: 3rem;
+				background: #eee;
+				.players-avatar,
+				.players-scoreboard {
+					min-height: 120px;
+					//border: 1px solid #eee;
+				}
+				.players-avatar {
+					display: flex;
+					flex-flow: wrap-reverse;
+					justify-content: space-evenly;
+					span {
+						text-align: center;
+						display: inline-block;
+						width: 100%;
+					}
+				}
+			} //midtop
 
-      }//midtop
-
-      .midbottom {
-        margin-bottom: 2rem;
-        overflow: auto;
-        .game-hand {
-          padding: 10px 10px 5px 10px;
-          img.rps-button {
-            max-width: 150px;
-            background: #eeeeee;
-            height: auto;
-            width:100%;
-            cursor: pointer;
-            transition:all .2s ease-in;
-            &:hover {
-              background: #cccff4;
-              border-radius: 50%;
-            }
-          }
-          .game-name {
-            float:right;
-            padding: 40px;
-            margin:0;
-          }
-        }
-
-      }
-
-
-
-
-
-    }
-
-
-
-
-
-
-  }//midsection wrapper
-
-
+			.midbottom {
+				margin-bottom: 2rem;
+				overflow: auto;
+				.game-hand {
+					padding: 10px 10px 5px 10px;
+					transition: all .25s ease-in;
+					img.rps-button {
+						max-width: 150px;
+						background: #f3f3f3;
+						height: auto;
+						width: 100%;
+						cursor: pointer;
+						&:active {
+							animation-name: rotateOut;
+							animation-duration: .5s;
+							box-shadow: 1px 0px 15px 5px rgba(110, 110, 110, 0.75);
+							border-radius: 50%;
+						}
+					}
+					.game-name {
+						float: right;
+						padding: 40px;
+						margin: 0;
+					}
+				}
+			}
+		}
+	} //midsection wrapper
 }
 
+#ovrlaywrap {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100vw;
+	height: 100vh;
+	opacity: 1;
+	z-index: 2;
 
+	animation: .75s bounceInDown;
+	background: rgba(0, 0, 0, .9);
 
+	.inner-ovrlay {
+		background: #e8eaf6;
+		z-index: 3;
+		width: 30vw;
+		height: 50vh;
+		opacity: .85;
+		position: fixed;
+		border-radius: 5px;
+		top: 15%;
+		left: 36%;
+		box-shadow: 1px 0px 15px 5px rgba(110, 110, 110, 0.75);
 
-
-
-
-
-
-
-
-
-#rpc-table {
-  thead {
-    background-color: #3f50b4;
-    tr th {
-      color: #f8f6f8;
-      font-size: 1rem;
-      border:1px solid #b1b1b1;
+  }
+  .score-title {
+    font-size: 4.25rem;
+    line-height: 4;
+    animation: 1s bounceIn;
+  }
+  .score-par {
+    &::after {
+			content: 'Official RPS Score\AE SouthPark';
+      font-size: 1.75rem;
+      font-weight: 400;
       text-align: center;
-    }
-    .games {
-      text-align: center;
-    }
+      display: block;
+      color: #2c2929;
+      line-height: 1;
+      text-shadow: 1px 0px black;
+      padding: 75px 0;
 
-
+		}
   }
-  tbody tr:nth-child(even) {
-    background:#f8f1f9;
-    tr td {
-      border:1px solid #b1b1b1;
-    }
-  }
-  tbody {
-    tr td {
-      border:1px solid #b1b1b1;
-    }
-  }
-
 }

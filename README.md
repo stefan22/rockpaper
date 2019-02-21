@@ -17,7 +17,7 @@
 
 > (these same rules are shown in game app)
 
-
+> desktop.
 
 
 <kbd>RPS</kbd><br/>
