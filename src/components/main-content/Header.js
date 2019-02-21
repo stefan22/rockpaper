@@ -1,7 +1,6 @@
 import React from 'react';
 import GameBoard from './game-board/GameBoard';
 import CurrentGame from './CurrentGame';
-import '../../scss/header.scss';
 
 const Header = (props) => {
   let {wins,losses,draws,games,turn,currentGameResult} = props;

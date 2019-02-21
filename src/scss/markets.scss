@@ -8,13 +8,13 @@
    background: darkslateblue;
   }
   .top-section-wrapper {
-    margin-bottom:1rem;
+    margin-bottom:0;
   }
 
   .mid-section-wrapper {
     width:100%;
     min-height: 320px;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     &.loading {
       transition: background 1s, color 1s;
       overflow: hidden;
@@ -61,7 +61,7 @@
       }//midtop
 
       .midbottom {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         overflow: auto;
         .game-hand {
           padding: 10px 10px 5px 10px;

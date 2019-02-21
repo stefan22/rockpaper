@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
-import {bringBall, getWinner, getRandomChoice} from '../Helpers';
+import {bringBall, getWinner, getRandomChoice,startPreShow} from '../Helpers';
 import Player from './Player';
 import InfoCard from '../InfoCard';
 import HandButton from './game-board/HandButton';
@@ -28,6 +28,8 @@ class Dashboard extends Component {
       currentGameResult: null,
       turn: 'choose an opponent',
       count: 1,
+      choice1:'',
+      choice2:'',
     };
 
     this.onPlayerHandPick = this.onPlayerHandPick.bind(this);
@@ -68,8 +70,8 @@ class Dashboard extends Component {
   }
 
   onPlayerHandPick(choice) {
-    let {playerChoice} = this.state;
-    let result = '';
+    let {playerChoice, currentGameResult} = this.state;
+    let result = '', int = 0;
 
     if(playerChoice === 3) {//computer
       let randomChoice = getRandomChoice();
@@ -107,6 +109,7 @@ class Dashboard extends Component {
           count: prevState.count + 1,
           choice1: choice,
           choice2: undefined,
+
         }));
       }
       else if(count === 2) {
@@ -137,12 +140,27 @@ class Dashboard extends Component {
           };
         }
       });
-
       this.setState({
         currentGameResult: result,
         turn: 'Eric. (Starts again.)',
       });
     }
+
+    const announceWinner = setInterval(() => {
+      int++;
+      if(int === 1) {
+        startPreShow(result);
+      }
+
+      if(int > 30) {
+        clearInterval(announceWinner);
+        startPreShow('remove-class');
+        this.setState({
+          turn: (playerChoice === 2) ? 'Eric. (Starts again.)' : 'playing computer atm',
+        });
+      }
+    },40);
+
   }
 
   handleGameReset() {
@@ -157,6 +175,7 @@ class Dashboard extends Component {
   }
 
   render() {
+
     const {isLoading,wins,losses,draws,
       games,turn,currentGameResult} = this.state;
     return (
