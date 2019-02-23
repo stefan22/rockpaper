@@ -1,5 +1,4 @@
 import React from 'react';
-import currentGame from './main-content/CurrentGame';
 //loading elem
 export const bringBall = <div className="ball-loading text-center">Loading...</div>;
 
@@ -9,54 +8,77 @@ export const getWinner = (playerChoice, computerChoice) => {
     scissors: 'paper',
     paper: 'rock'
   };
-  //player one out of the three
   if (playerChoice === computerChoice) {
     return 'draws';
   }
-  //random generated
   if (computerChoice === rules[playerChoice]) {
     return 'wins';
   }
-
   else {
     return 'losses';
   }
 };
 
 export const getRandomChoice = () => {
-  //return either rock,paper,scissors
   const choices = [ 'rock', 'paper', 'scissors' ];
   return choices[Math.floor(Math.random() * choices.length)];
 };
 
 export const startPreShow = (remove) => {
-  let winnerScore;
+  let winnerScore = '', gmv = '', scoreTitle;
+  const page = document.querySelector('#root .page-wrapper');
+  const divOvrlay = document.createElement('div');
+  divOvrlay.className = 'inner-ovrlay';
+  //first-rule / winnerScore
+  if(remove === 'First Rule of RPC: choose an opponent') {
+    gmv = remove;
+  } else
   if(remove === 'wins' || remove === 'draws' || remove === 'losses') {
     winnerScore = remove;
   }
-  let page = document.querySelector('#root .page-wrapper');
-  //overlay div
-  const buildOverlay = () => {
-    let divWrap = document.createElement('div');
+
+  const buildOverlay = () => { //overlay div
+    const divWrap = document.createElement('div');
+    const scorePar = document.createElement('p');
     divWrap.id = 'ovrlaywrap';
-    let divOvrlay = document.createElement('div');
-    divOvrlay.className = 'inner-ovrlay';
-    let scoreTitle = document.createElement('h3');
-    let scorePar = document.createElement('p');
+    if(winnerScore) {
+      divOvrlay.className = `${(winnerScore
+        .indexOf(winnerScore) === 0) ?  //is-win, is-loss,is-draw
+        'inner-ovrlay is-' + winnerScore :
+        'inner-ovrlay'}`;
+    }
+    scoreTitle = document.createElement('h3');
     scorePar.className = 'score-par';
-    scoreTitle.textContent = `Eric ${winnerScore}!`;
-    scoreTitle.className = 'score-title text-center';
+    if(remove === '' &&
+       winnerScore === '') { //is-rule-violation-picked plyr
+      scoreTitle
+        .textContent = 'Cannot Play Against yourself!';
+      scoreTitle
+        .className = `${(gmv !== '') ?
+          'score-title text-center is-rule-violation' :
+          'score-title text-center'}`;
+    } else {
+      scoreTitle //is-rule-violation-failed-pick plyr
+        .textContent = `${(gmv !== '') ?
+          gmv : 'Eric ' + winnerScore + '!'}`;
+
+      scoreTitle.className = `${(gmv !== '') ?
+        'score-title text-center is-rule-violation' :
+        'score-title text-center'}`;
+    }
+    //d-ready
     divOvrlay.appendChild(scoreTitle);
     divOvrlay.appendChild(scorePar);
     divWrap.appendChild(divOvrlay);
-
     document.body.appendChild(divWrap);
   };
   //removed on timer
-  if (remove === 'remove-class') {
+  if (remove === 'remove-class' || remove === 'rule-violation') {
     page.classList.remove('bring-down');
-    //rem overlay from dom
-    document.getElementById('ovrlaywrap').parentElement.removeChild(document.getElementById('ovrlaywrap'));
+    document
+      .getElementById('ovrlaywrap')
+      .parentElement.removeChild(//rm ovrlay from dom
+        document.getElementById('ovrlaywrap'));
   } else {
     page.classList.add('bring-down');
     buildOverlay();

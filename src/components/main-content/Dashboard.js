@@ -53,6 +53,7 @@ class Dashboard extends Component {
     if(res === 1) {
       this.setState({
         playerChoice: res,
+        turn: 'Game Rule Violation!',
       });
     } else
     if(res === 2) {
@@ -70,8 +71,14 @@ class Dashboard extends Component {
   }
 
   onPlayerHandPick(choice) {
-    let {playerChoice, currentGameResult} = this.state;
+    let {playerChoice} = this.state;
     let result = '', int = 0;
+
+    if(playerChoice === 0 || playerChoice === 1) {
+      this.setState({
+        turn: 'Game Rule Violation!',
+      });
+    }
 
     if(playerChoice === 3) {//computer
       let randomChoice = getRandomChoice();
@@ -148,18 +155,29 @@ class Dashboard extends Component {
 
     const announceWinner = setInterval(() => {
       int++;
+
       if(int === 1) {
-        startPreShow(result);
+        if(playerChoice === 0) {
+          startPreShow('First Rule of RPC: choose an opponent');
+        } else {
+          startPreShow(result);
+        }
+      }
+      if(int > 35) {
+        clearInterval(announceWinner);
+        //startPreShow('remove-class');
+        startPreShow(`${(playerChoice === 0) ? 'rule-violation' : 'remove-class'}`);
+
+        if(!playerChoice === 0) {
+          this.setState({
+            turn: (playerChoice === 2) ? 'Eric. (Starts again.)' : 'playing computer atm',
+          });
+        }
       }
 
-      if(int > 30) {
-        clearInterval(announceWinner);
-        startPreShow('remove-class');
-        this.setState({
-          turn: (playerChoice === 2) ? 'Eric. (Starts again.)' : 'playing computer atm',
-        });
-      }
     },40);
+
+
 
   }
 

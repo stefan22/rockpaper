@@ -114,10 +114,11 @@
 	z-index: 2;
 
 	animation: .75s bounceInDown;
-	background: rgba(0, 0, 0, .9);
+  //background: #2196f3;
+  background:rgba(33, 150, 243, .8);
 
 	.inner-ovrlay {
-		background: #e8eaf6;
+		background:#C62828;
 		z-index: 3;
 		width: 30vw;
 		height: 50vh;
@@ -126,26 +127,42 @@
 		border-radius: 5px;
 		top: 15%;
 		left: 36%;
-		box-shadow: 1px 0px 15px 5px rgba(110, 110, 110, 0.75);
+    box-shadow: 0px 0px 3px 1px #3F51B5
+    h3 {
+      color: white;
+    }
+    &.is-wins {
+      background: #0D47A1;
+    }
+    &.is-losses {
+      background: #c62828;
+    }
+    &.is-draws {
+      background: #2E7D32;
+    }
 
   }
   .score-title {
-    font-size: 4.25rem;
-    line-height: 4;
+    font-size: 3.25rem;
+    line-height: 2.5;
     animation: 1s bounceIn;
+    color: white;
+  }
+  .is-rule-violation {
+    transition: all .5 ease;
+    color: white;
+    font-size: 3.5rem;
+    line-height: 2;
   }
   .score-par {
     &::after {
-			content: 'Official RPS Score\AE SouthPark';
+			content: 'Official RPS Rules \AE';
       font-size: 1.75rem;
       font-weight: 400;
       text-align: center;
       display: block;
-      color: #2c2929;
+      color: black;
       line-height: 1;
-      text-shadow: 1px 0px black;
-      padding: 75px 0;
-
 		}
   }
 }
