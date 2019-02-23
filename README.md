@@ -15,12 +15,18 @@
 - Pick your hand from bottom set of options to start playing. That's it.
 - Reset game Before switching oponents.
 
-> (these same rules are shown in game app)
-
-> desktop.
+> desktop only.
 
 
-<kbd>RPS</kbd><br/>
-![](src/images/rps.png)<br/>
+##### Warning: first-time video editing below
+
+
+<kbd>RPS in-action</kbd><br/>
+![](src/images/rps.gif)<br/>
+
+
+
+<br />
+
 
 (..†he•En∂.)

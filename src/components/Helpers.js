@@ -31,7 +31,9 @@ export const startPreShow = (remove) => {
   divOvrlay.className = 'inner-ovrlay';
   //first-rule / winnerScore
   if(remove === 'First Rule of RPC: choose an opponent') {
-    gmv = remove;
+    gmv = `
+       First Rule of RPC: <br/>
+       Choose an opponent!`;
   } else
   if(remove === 'wins' || remove === 'draws' || remove === 'losses') {
     winnerScore = remove;
@@ -59,7 +61,7 @@ export const startPreShow = (remove) => {
           'score-title text-center'}`;
     } else {
       scoreTitle //is-rule-violation-failed-pick plyr
-        .textContent = `${(gmv !== '') ?
+        .innerHTML = `${(gmv !== '') ?
           gmv : 'Eric ' + winnerScore + '!'}`;
 
       scoreTitle.className = `${(gmv !== '') ?
