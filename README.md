@@ -22,7 +22,7 @@
 
 
 <kbd>RPS in-action</kbd><br/>
-![](src/images/rps.gif)<br/>
+![](src/images/rps-intro.gif)<br/>
 
 
 
